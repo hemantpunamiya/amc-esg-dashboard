@@ -7,6 +7,7 @@ import {
   LabelList,
 } from "recharts";
 import data from "../public/amc_esg_data.json";
+import EmailGateModal from "../components/EmailGateModal";
 
 interface Company {
   company_name: string;
@@ -160,6 +161,7 @@ export default function AMCPage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <EmailGateModal />
       {/* HERO */}
       <header className="bg-gradient-to-br from-[#1b2a4a] via-[#2c3e6b] to-[#1b2a4a] text-white">
         <div className="mx-auto max-w-6xl px-6 py-14 text-center">
